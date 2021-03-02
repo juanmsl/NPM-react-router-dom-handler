@@ -25,7 +25,7 @@ const App = () => {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/react-router-dom-handler'>
 
       <Navbar />
 
