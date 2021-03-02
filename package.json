@@ -1,10 +1,10 @@
 {
   "name": "react-router-dom-handler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "React form component generator from Json",
   "main": "lib/index.js",
-  "homepage": "https://juanmsl.github.io/react-router-dom-handler/",
+  "homepage": "https://juanmsl.com/react-router-dom-handler/",
   "repository": {
     "type": "git",
     "url": "https://github.com/juanmsl/react-router-dom-handler"
