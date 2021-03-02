@@ -1,6 +1,6 @@
 {
   "name": "react-router-dom-handler",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "private": false,
   "description": "React form component generator from Json",
   "main": "lib/index.js",
