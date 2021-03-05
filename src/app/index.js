@@ -1,33 +1,39 @@
 import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import RouterDomHandler from 'components';
-import HomeRoutes from './home';
-import ContactRoutes from './contact';
-import Navbar from './navbar';
 
 
 const App = () => {
 
   const routes = [
     {
-      path: '/home',
-      routes: HomeRoutes
-    },
-    {
-      path: '/contact',
-      routes: ContactRoutes
+      path: '/',
+      render: () => (
+        <main>
+          <iframe
+            src="https://codesandbox.io/embed/react-router-dom-handler-geh5e?fontsize=14&theme=dark"
+            style={{
+              width: "100%",
+              height: "800px",
+              border: 0,
+              borderRadius: "4px",
+              overflow: "hidden"
+            }}
+            title="React Router Dom Handler"
+            allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+            sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+          ></iframe>
+        </main>
+      )
     },
     {
       path: '',
-      redirect: '/home'
+      redirect: '/'
     }
-  ];
-
+  ]
 
   return (
     <BrowserRouter basename='/react-router-dom-handler'>
-
-      <Navbar />
 
       <RouterDomHandler
         routes={routes}
