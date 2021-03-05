@@ -1,4 +1,7 @@
 src
 public
+build
+README.md
+jsconfig.json
 .idea/
 .vscode/
