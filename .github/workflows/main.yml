@@ -23,7 +23,12 @@ jobs:
           key: ${{ runner.os }}-js-${{ hashFiles('yarn.lock') }}
       - name: Install dependencies
         run: yarn install
-      - name: Deploy landing page
-        run: yarn deploy
+      - name: Building landing page
+        run: yarn build
+      - name: Deploying landing page
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: gh-pages
+          folder: build
