@@ -1,3 +1,26 @@
 .app {
-  
+    display: grid;
+    padding: $padding;
+    grid-template-areas: 'cover' 'content';
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    background: url(https://juanmsl.com/assets/images/backgrounds/background.svg) 50%/cover fixed no-repeat;
+
+    &__cover {
+        grid-area: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: $padding * 5 $padding * 20;
+    }
+
+    &__codesandbox {
+        width: 80vw;
+        height: 80vh;
+        grid-area: content;
+        padding: $padding;
+        margin: 0 auto;
+    }
 }

@@ -9,12 +9,17 @@ const App = () => {
     {
       path: '/',
       render: () => (
-        <main>
+        <main className='app'>
+
+          <section className='app__cover'>
+            <h1>React Router Dom Handler</h1>
+            <p>Controller for React Router Dom to create easy nested routes in different apps</p>
+          </section>
+
           <iframe
             src="https://codesandbox.io/embed/react-router-dom-handler-geh5e?fontsize=14&theme=dark"
+            className="app__codesandbox"
             style={{
-              width: "100%",
-              height: "800px",
               border: 0,
               borderRadius: "4px",
               overflow: "hidden"

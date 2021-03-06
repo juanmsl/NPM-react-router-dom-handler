@@ -4,7 +4,7 @@ Controller for React Router Dom to create easy nested routes in different apps
 
 ## Demo
 
-See [this demo page](https://codesandbox.io/s/react-router-dom-handler-geh5e?fontsize=14&hidenavigation=1&theme=dark) and check it out.
+See [this demo page](https://juanmsl.com/react-router-dom-handler/) and check it out.
 
 ## Installation
 
